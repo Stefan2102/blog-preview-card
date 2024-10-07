@@ -1,0 +1,149 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #f4d04e;
+    --white: #ffffff;
+    --gray-950: #111111;
+    --gray-500: #6b6b6b;
+}
+
+/* Layout */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    line-height: 1.5;
+    font-family: "Figtree", sans-serif;
+}
+
+.container {
+    max-width: 20.4rem;
+    background: var(--white);
+    border: 1px solid var(--gray-950);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 7px 7px 0px var(--gray-950);
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.rectangle {
+    background: var(--yellow);
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 1.25rem;
+}
+
+/* Typography */
+h1 {
+    font-weight: 800;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    padding-bottom: 0.75rem;
+    transition: color 0.3s ease-in-out;
+}
+
+h2:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+p {
+    font-weight: 500;
+}
+
+p:first-of-type {
+    font-size: 0.75rem;
+    padding: 0.75rem 0;
+}
+
+p:last-of-type {
+    font-size: 0.88rem;
+    color: var(--gray-500);
+}
+
+h3 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    padding-left: 0.75rem;
+}
+
+/* Images */
+.img__illustration,
+.img__avatar {
+    width: 100%;
+}
+
+.img__avatar {
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+/* Attribution Section */
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+.attribution a {
+    color: var(--gray-500);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--gray-950);
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 350px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 0.65rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .container p {
+        font-size: 0.7rem;
+    }
+
+    h3 {
+        font-size: 0.75rem;
+    }
+
+    .attribution {
+        font-size: 0.6rem;
+        padding: 0 2rem;
+    }
+}
